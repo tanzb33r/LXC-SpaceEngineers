@@ -7,7 +7,7 @@ mkdir -p /appdata/space-engineers/config/World && \
 
 if [ ! -f /appdata/space-engineers/config/World/Sandbox.sbc ]; then
     echo "World not found, initalizing empty star system..."
-    unzip -n star-system.zip -d /appdata/space-engineers/config && \
+    unzip -n star-system.zip -d /appdata/space-engineers/config
 fi
 
 # #check if /appdata/space-engineers/config/World is a folder
