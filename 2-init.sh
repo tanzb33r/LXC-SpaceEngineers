@@ -43,7 +43,7 @@ if [ "$(ls -1 /appdata/space-engineers/Plugins/*.dll | wc -l)" -gt "0" ]; then
   tr -d '\n' |\
   awk '{ print "<Plugins>" $0 "</Plugins>" }' ) && \
 else
-  PLUGINS_STRING="<Plugins />" && \
+  PLUGINS_STRING="<Plugins />"
 fi
 
 SED_EXPRESSION_EMPTY="s/<Plugins \/>/${PLUGINS_STRING////\\/} /g"
