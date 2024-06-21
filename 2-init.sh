@@ -41,7 +41,7 @@ if [ "$(ls -1 /appdata/space-engineers/Plugins/*.dll | wc -l)" -gt "0" ]; then
   PLUGINS_STRING=$(ls -1 /appdata/space-engineers/Plugins/*.dll |\ 
   awk '{ print "<string>" $0 "</string>" }' |\
   tr -d '\n' |\
-  awk '{ print "<Plugins>" $0 "</Plugins>" }' ) && \
+  awk '{ print "<Plugins>" $0 "</Plugins>" }' )
 else
   PLUGINS_STRING="<Plugins />"
 fi
