@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir -p /wineprefix && \
+mkdir -p /wineprefix
 
 Xvfb :5 -screen 0 1024x768x16 && \
 env WINEARCH=win64 WINEDEBUG=-all WINEDLLOVERRIDES="mscoree=d" WINEPREFIX=/wineprefix wineboot --init /nogui && \
