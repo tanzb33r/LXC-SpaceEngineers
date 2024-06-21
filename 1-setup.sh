@@ -7,7 +7,8 @@ apt-get -y install \
         sudo \
         tar \
         gzip \
-        xz-utils && \
+        xz-utils \
+        unzip && \
 dpkg --add-architecture i386 && \
 mkdir -pm755 /etc/apt/keyrings && \
 wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key && \
