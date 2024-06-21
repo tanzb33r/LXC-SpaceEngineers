@@ -1,9 +1,9 @@
 #!/bin/bash
 mkdir -p /appdata/space-engineers/bin
-mkdir -p /appdata/space-engineers/config
 mkdir -p /appdata/space-engineers/SpaceEngineersDedicated
+mkdir -p /appdata/space-engineers/Plugins
+mkdir -p /appdata/space-engineers/config
 mkdir -p /appdata/space-engineers/config/World
-mkdir -p /appdata/space-engineers/config/Plugins
 
 if [ ! -f /appdata/space-engineers/config/World/Sandbox.sbc ]; then
     echo "World not found, initalizing empty star system..."
