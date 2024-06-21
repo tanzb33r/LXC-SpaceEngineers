@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir -p /wineprefix
 
-Xvfb :5 -screen 0 1024x768x16 && \
+Xvfb :5 -screen 0 1024x768x16 &
 env WINEARCH=win64 WINEDEBUG=-all WINEDLLOVERRIDES="mscoree=d" WINEPREFIX=/wineprefix wineboot --init /nogui && \
 env WINEARCH=win64 WINEDEBUG=-all WINEPREFIX=/wineprefix winetricks corefonts && \
 env DISPLAY=:5.0 WINEARCH=win64 WINEDEBUG=-all WINEPREFIX=/wineprefix winetricks -q vcrun2017 && \
