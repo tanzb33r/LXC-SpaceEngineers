@@ -1,14 +1,14 @@
 #!/bin/bash
-sudo mkdir -p /appdata/space-engineers/bin
-sudo mkdir -p /appdata/space-engineers/config
-sudo mkdir -p /appdata/space-engineers/bins/SpaceEngineersDedicated
-sudo mkdir -p /appdata/space-engineers/bins/steamcmd
-sudo mkdir -p /appdata/space-engineers/config/World
-sudo mkdir -p /appdata/space-engineers/config/Plugins
+mkdir -p /appdata/space-engineers/bin
+mkdir -p /appdata/space-engineers/config
+mkdir -p /appdata/space-engineers/bins/SpaceEngineersDedicated
+mkdir -p /appdata/space-engineers/bins/steamcmd
+mkdir -p /appdata/space-engineers/config/World
+mkdir -p /appdata/space-engineers/config/Plugins
 
 if [ ! -f /appdata/space-engineers/config/World/Sandbox.sbc ]; then
     echo "World not found, initalizing empty star system..."
-    sudo unzip -n star-system.zip -d /appdata/space-engineers/config
+    unzip -n star-system.zip -d /appdata/space-engineers/config
 fi
 
 # #check if /appdata/space-engineers/config/World is a folder
