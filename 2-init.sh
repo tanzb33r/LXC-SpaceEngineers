@@ -58,4 +58,4 @@ cat /appdata/space-engineers/config/SpaceEngineers-Dedicated.cfg | sed -E "$SED_
 
 cp /appdata/space-engineers/config/SpaceEngineers-Dedicated.cfg /appdata/space-engineers/SpaceEngineersDedicated/SpaceEngineers-Dedicated.cfg && \
 
-steamcmd +login anonymous +@sSteamCmdForcePlatformType windows +force_install_dir /appdata/space-engineers/SpaceEngineersDedicated +app_update 298740 +quit
+/usr/share/steamcmd.sh +login anonymous +@sSteamCmdForcePlatformType windows +force_install_dir /appdata/space-engineers/SpaceEngineersDedicated +app_update 298740 +quit
