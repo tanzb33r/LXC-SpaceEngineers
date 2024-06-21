@@ -12,13 +12,13 @@ if [ ! -f /appdata/space-engineers/config/World/Sandbox.sbc ]; then
 fi
 
 # #check if /appdata/space-engineers/config/World is a folder
-if [ ! -d "/appdata/space-engineers/World" ]; then
+if [ ! -d "/appdata/space-engineers/config/World" ]; then
   echo "World folder does not exist, exiting"
   exit 129
 fi
 
 # #check if /appdata/space-engineers/config/World/Sandbox.sbc exists and is a file
-if [ ! -f "/appdata/space-engineers/World/Sandbox.sbc" ]; then
+if [ ! -f "/appdata/space-engineers/config/World/Sandbox.sbc" ]; then
   echo "Sandbox.sbc file does not exist, exiting."
   exit 130
 fi
